@@ -24,6 +24,7 @@ Common
 */
 
 header,
+main,
 footer {
   left: 0;
   right: 0;
@@ -64,6 +65,7 @@ Main
 */
 
 main {
+  position: fixed;
   height: calc(100vh - 180px);
 }
 
