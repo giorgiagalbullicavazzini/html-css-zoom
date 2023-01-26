@@ -9,14 +9,6 @@ Reset
 }
 
 /*
-Debug
-*/
-
-.debug footer {
-  background-color: lightblue;
-}
-
-/*
 Container
 */
 
@@ -42,13 +34,6 @@ ul.list-inline {
   list-style-type: none;
 }
 
-.list-inline li {
-  background-color: #4a4a4a;
-  padding: 5px;
-  border-radius: 5px;
-  line-height: 100%;
-}
-
 .list-inline li:last-of-type {
   margin-right: 5px;
 }
@@ -63,6 +48,13 @@ Header
 
 header {
   height: 40px;
+}
+
+header .list-inline li {
+  background-color: #4a4a4a;
+  padding: 5px;
+  border-radius: 5px;
+  line-height: 100%;
 }
 
 /*
@@ -104,6 +96,22 @@ Footer
 
 footer {
   height: 70px;
+  background-color: #222222;
+}
+
+.footer-container {
+  display: flex;
+  text-align: center;
+}
+
+.footer-container .user-options {
+  gap: 20px;
+}
+
+.footer-container .user-options .more-options {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 /*
