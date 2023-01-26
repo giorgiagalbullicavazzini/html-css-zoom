@@ -105,30 +105,26 @@ footer {
   background-color: #222222;
 }
 
-footer > *:not(:last-child) {
-  margin: 0 10px;
+footer .list-inline {
+  background-color: #222222;
+  align-items: center;
 }
 
-footer .list-inline div > i {
+footer .user-options > *,
+footer .call-options > * {
+  padding: 0 10px;
+}
+
+footer .list-inline i {
   font-size: 25px;
 }
 
-footer .list-inline li > i {
+footer .list-inline i.more-options {
   font-size: 12px;
 }
 
 footer .list-inline div > div {
   margin-top: 5px;
-}
-
-footer .list-inline,
-footer .more-options {
-  align-items: center;
-  gap: 20px;
-}
-
-footer .more-options {
-  display: flex;
 }
 
 footer .green {
