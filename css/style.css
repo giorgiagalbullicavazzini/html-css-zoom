@@ -14,28 +14,18 @@ Container
 
 body {
   background-color: #000000;
+  font-family: 'Roboto', sans-serif;
   color: white;
 }
-
-/*
-Typo
-*/
 
 /*
 Common
 */
 
 ul.list-inline {
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 10px;
   list-style-type: none;
-}
-
-.list-inline li:last-of-type {
-  margin-right: 5px;
+  /* height: 100%; */
+  display: flex;
 }
 
 .rotate {
@@ -50,11 +40,15 @@ header {
   height: 40px;
 }
 
+header .list-inline {
+  justify-content: flex-end;
+}
+
 header .list-inline li {
   background-color: #4a4a4a;
   padding: 5px;
   border-radius: 5px;
-  line-height: 100%;
+  margin: 5px;
 }
 
 /*
@@ -62,16 +56,16 @@ Main
 */
 
 main {
-  height: calc(100vh - 110px);
+  height: calc(100vh - 170px);
 }
 
 .users-container {
   width: 95vw;
-  margin: auto;
+  margin: 40px auto 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px 10px;
   overflow: auto;
 }
 
@@ -79,7 +73,6 @@ main {
   position: relative;
   width: 250px;
   height: 150px;
-  background-color: lightgreen;
 }
 
 .users-container .user .user-name {
@@ -102,17 +95,22 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-align: center;
 }
 
-.footer-container .list-inline {
+.footer-container .user-options {
+  margin-left: 10px;
+}
+
+.footer-container .list-inline,
+.footer-container .more-options {
   gap: 20px;
 }
 
 .footer-container .more-options {
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 
 .footer-container .green {
@@ -123,7 +121,7 @@ footer {
   line-height: 70px;
   background-color: #4a4a4a;
   color: red;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 /*
