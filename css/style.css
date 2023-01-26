@@ -16,6 +16,7 @@ body {
   background-color: #000000;
   font-family: 'Roboto', sans-serif;
   color: white;
+  font-size: 14px;
 }
 
 /*
@@ -97,6 +98,18 @@ footer {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+}
+
+.footer-container .list-inline div > i {
+  font-size: 25px;
+}
+
+.footer-container .list-inline li > i {
+  font-size: 12px;
+}
+
+.footer-container .list-inline div > div {
+  margin-top: 5px;
 }
 
 .footer-container .user-options {
