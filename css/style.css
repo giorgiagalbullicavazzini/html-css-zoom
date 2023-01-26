@@ -9,8 +9,25 @@ Reset
 }
 
 /*
+Debug
+*/
+
+.debug header,
+.debug footer {
+  background-color: lightblue;
+}
+
+.debug main {
+  background-color: lightcoral;
+}
+
+/*
 Container
 */
+
+body {
+  background-color: #000000;
+}
 
 /*
 Typo
@@ -24,10 +41,22 @@ Common
 Header
 */
 
+header {
+  height: 40px;
+}
+
 /*
 Main
 */
 
+main {
+  height: calc(100vh - 110px);
+}
+
 /*
 Footer
 */
+
+footer {
+  height: 70px;
+}
