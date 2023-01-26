@@ -25,10 +25,6 @@ body {
   color: white;
 }
 
-.users-container {
-  width: 95vw;
-}
-
 /*
 Typo
 */
@@ -77,6 +73,16 @@ main {
   height: calc(100vh - 110px);
 }
 
+.users-container {
+  width: 95vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow: auto;
+}
+
 .users-container .user {
   position: relative;
   width: 250px;
@@ -98,4 +104,17 @@ Footer
 
 footer {
   height: 70px;
+}
+
+/*
+Scrollbar invisibile
+*/
+
+.users-container::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
+
+.users-container {
+  -ms-overflow-style: none;  /* IE, Edge */
+  scrollbar-width: none;  /* Firefox */
 }
