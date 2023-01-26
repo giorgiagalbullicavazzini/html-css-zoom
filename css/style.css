@@ -101,17 +101,29 @@ footer {
 
 .footer-container {
   display: flex;
+  justify-content: space-between;
   text-align: center;
 }
 
-.footer-container .user-options {
+.footer-container .list-inline {
   gap: 20px;
 }
 
-.footer-container .user-options .more-options {
+.footer-container .more-options {
   display: flex;
-  gap: 20px;
   align-items: center;
+  gap: 20px;
+}
+
+.footer-container .green {
+  color: #4bc800;
+}
+
+.footer-container .end-meeting {
+  line-height: 70px;
+  background-color: #4a4a4a;
+  color: red;
+  padding: 0 10px;
 }
 
 /*
